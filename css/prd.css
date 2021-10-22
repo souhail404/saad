@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'noto kufi arabic' ,sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 280px;
+    min-height: 500px;
+    height: 100vh;
+    margin: auto;
+    background-color: #ffffff;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 20px;
+}
+.head{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    font-size: 1.6rem;
+    color: #00b6b6;
+    font-weight: 700;
+}
+.form .price-tlr{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 6px;
+}
+.form .price-tlr div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form .price-tlr span{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.form form{
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+}
+.form form input{
+    text-align: end;
+    height: 40px;
+    font-size: 1.1rem;
+    border: solid 1px rgb(77, 77, 77);
+    padding: 3px;
+    border-radius: 6px;
+    margin:0 8px;
+    width: 48%;
+}
+.form form div{
+    margin-bottom:20px ;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.form form button{
+    width: 50%;
+    height: 40px;
+    background-color: #00b6b6;
+    border: none;
+    border-radius: 6px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.304);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+.form form button:hover{
+    background-color: #03a5a5;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b6b6;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+}
+footer span{
+    margin:0 10px;
+    width: 1px ;
+    height: 25px;
+    background-color: white;
+}
+footer p{
+    font-size: 1rem;
+}
+footer p a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width:800px) {
+    footer span{
+        margin:0 7px;
+        width: 1px ;
+        height: 20px;
+    }
+    footer p{
+        font-size: 0.9rem;
+    }
+    .form form button{
+        width: 65%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .form form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:5px ;
+    }
+    .form form input{
+        font-size: 1.1rem;
+        border: solid 1px rgb(77, 77, 77);
+        padding: 3px;
+        border-radius: 6px;
+        margin:10px 8px;
+        width: 100%;
+    }
+    .form .price-tlr{
+        margin-bottom: 50px;
+        min-width: 200px;
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        height: 110vh;
+    }
+    footer{
+        height: 50px;
+        position: relative;
+        bottom: 0;
+    }
+    footer span{
+        margin:0 7px;
+        width: 1px ;
+        height: 17px;
+    }
+    footer p{
+        font-size: 0.75rem;
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    .form form{
+        width: 90%;
+    }
+    .form form button{
+        width: 65%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .form form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:5px ;
+    }
+    .form form input{
+        font-size: 1.1rem;
+        border: solid 1px rgb(77, 77, 77);
+        padding: 3px;
+        border-radius: 6px;
+        margin:10px 8px;
+        width: 100%;
+    }
+    .form .price-tlr{
+        width: 90%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .head{
+        font-size: 1.4rem;
+        padding:0 20px;
+    }
+}
+
+@media (max-width:500px) {
+    
+    footer{
+        height: 80px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: 0;
+        padding: 10px 0;
+    }
+    footer span{
+        display: none;
+    }
+    footer p{
+        font-size: 0.85rem;
+    }
+    .head{
+        font-size: 1.25rem;
+        padding:0 20px;
+    }
+}    
+@media (max-width:400px) {
+    
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    .form form{
+        width: 98%;
+    }
+    .form form button{
+        width: 100%;
+       
+    }
+    .form .price-tlr{
+        width: 98%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .head{
+        font-size: 1.3rem;
+        padding:0 20px;
+    }
+}
+
+@media (max-width:330px) {
+    
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 27vh;
+    }
+    .form form{
+        width: 100%;
+    }
+    .form form input{
+     height: 35px;
+     font-size: 0.9rem;
+     border-radius: 4px;
+    }
+    .form form button{
+        width: 100%;
+        height: 35px;
+        font-size: 0.9rem;
+        border-radius: 4px;
+    }
+    .form .price-tlr{
+        width: 100%;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .form .price-tlr p{
+        font-size: 0.9rem;
+    }
+    .head{
+        font-size: 1rem;
+        padding:0 20px;
+    }
+    footer{
+        height: 70px;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+}
